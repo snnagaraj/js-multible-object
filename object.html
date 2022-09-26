@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            background: rgb(167, 224, 238);
+            text-align: center;
+            font-family: sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        let car=[
+            {brand:"HUNDAI",name:"Verna",model:"2010",price:"10k"},
+            {brand:"HONDA",name:"City",model:"2009",price:"15k"},
+            {brand:"BMW",name:"GT",model:"2015",price:"90k"}
+        ]
+        for(let key of car){
+            let div=document.createElement('div');
+            document.body.appendChild(div);
+
+            let l1=document.createElement('h1'),
+
+            l2=document.createElement('h2'),
+            l3=document.createElement('h2'),
+            l4=document.createElement('h2');
+            l1.className+="head";
+
+            l1.innerText=key.brand;
+            l2.innerText=key.name;
+            l3.innerText=key.model;
+            l4.innerText=key.price;
+
+            div.appendChild(l1);
+            div.appendChild(l2);
+            div.appendChild(l3);
+            div.appendChild(l4);
+        }
+    </script>    
+</body>
+</html>
